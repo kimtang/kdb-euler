@@ -16,3 +16,10 @@ It is possible to make £2 in the following way:
 How many different ways can £2 be made using any number of coins?
 
 \
+
+(::)cur:200 100 50 20 10 5 2f
+num:"f"$cross[;]over 6#cnt:til each 1+"j"$200%cur 
+num:num where 200>=result:num$6#cur  
+num:num cross "f"$last cnt 
+num:num where 200>=result:num$cur
+count num
